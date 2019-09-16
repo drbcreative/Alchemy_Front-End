@@ -51,10 +51,6 @@
     &:hover {
       color: $color-light-accent !important;
     }
-
-    @media screen and (min-width: 1200px) {
-      font-weight: 700;
-    }
   }
 }
 
@@ -93,14 +89,11 @@
 
   .dropdown-item {
     padding-left: 0;
-    font-family: $font-primary;
-    font-size: 1rem;
+    font-family: $font-secondary;
+    font-size: 0.8125rem;
     position: relative;
-
     color: $color-light;
-    font-family: $font-primary;
     font-weight: 400;
-    font-size: 1rem;
 
     &:hover {
       background-color: transparent;

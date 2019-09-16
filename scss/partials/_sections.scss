@@ -29,7 +29,52 @@
   }
 
   /* HERO ------------------------------------------------------------------- */
+  .hero {
+    .containerish {
+      padding: 40px 20px;
+      max-width: 1200px;
+      height: 75vh;
+      max-height: 560px;
+      background: url('../../img/hero-img@2x.jpg') center / cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color-main, .8);
+      }
+
+      .section-info {
+        z-index: 2;
+        text-align: center;
+      }
+    }
+  }
+
   /* CTA -------------------------------------------------------------------- */
+  .cta {
+    .containerish {
+      max-width: 1200px;
+      background: $color-dark-accent;
+      padding: 1rem 2rem;
+      text-align: center;
+
+      p {
+        font-family: $font-secondary;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+  }
+
   /* BODY ------------------------------------------------------------------- */
   /* ABOUT ------------------------------------------------------------------ */
   /* FACE ------------------------------------------------------------------- */
