@@ -7,11 +7,11 @@
 
 .ui-btn {
   font-family: $font-primary;
-  font-size: 0.938rem;
+  font-size: 0.75rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05rem;
-  line-height: 0.9375rem;
+  line-height: 0.75rem;
   padding: 0.6rem 0rem;
   display: inline-flex;
   justify-content: center;
@@ -109,6 +109,19 @@
     color: $color-white;
     background-color: lighten($color-dark, 15);
     border: 1px solid lighten($color-dark, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-dark-ol {
+  background-color: transparent;
+  border: 1px solid $color-dark;
+  color: $color-dark;
+
+  &:hover {
+    color: $color-main;
+    background-color: darken(#fff, 15);
+    border: 1px solid darken(#fff, 15);
     text-decoration: none;
   }
 }
