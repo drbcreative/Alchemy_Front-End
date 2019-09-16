@@ -276,6 +276,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/product-wrapper-bg.png": {
+		"ft": 32768,
+		"iS": 33330,
+		"oA": 0,
+		"oAP": "/img/product-wrapper-bg.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/product-wrapper-bg@2x.png": {
+		"ft": 32768,
+		"iS": 96218,
+		"oA": 0,
+		"oAP": "/img/product-wrapper-bg@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/products-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 871100,

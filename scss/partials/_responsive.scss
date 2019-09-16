@@ -125,6 +125,52 @@
         }
       }
     }
+
+    /* PRODUCTS ------------------------------------------------------------- */
+    .products {
+      margin-top: 2rem;
+
+      .containerish {
+
+        .product-wrapper {
+          position: absolute;
+
+          right: 0;
+          top: 0;
+          padding: 60px 20px 80px 20px;
+
+          p {
+            text-align: center;
+            margin-top: 7rem;
+            margin-bottom: 2rem;
+          }
+
+          .product-box {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* APPOINTMENTS ----------------------------------------------------------- */
+  .appointments {
+    padding: 80px 20px;
+
+    .appointment-wrapper {
+      flex: 1;
+      padding: 1rem 1rem;
+      max-width: 865px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-bottom: 0;
+      }
+    }
   }
 
 }
@@ -154,6 +200,7 @@
   }
 
   .main-content-wrapper {
+    padding-bottom: 4rem;
 
     /* HERO ----------------------------------------------------------------- */
     .hero {
@@ -241,6 +288,28 @@
       }
     }
 
+    /* PRODUCTS ------------------------------------------------------------- */
+    .products {
+      margin-top: 2rem;
+
+      .containerish {
+        .product-wrapper {
+          right: 35px;
+          top: 50px;
+          padding: 60px 20px 80px 20px;
+
+          p {
+            text-align: center;
+            margin-top: 7rem;
+            margin-bottom: 2rem;
+          }
+
+          .product-box {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -250,6 +319,7 @@
 @media screen and (min-width: 1200px) {
 
   .main-content-wrapper {
+    padding-bottom: 12rem;
 
     .ui-btn {
       padding: 1.3rem 1.5rem;
@@ -346,6 +416,31 @@
         .col-left,
         .col-right {
           height: 75vh;
+        }
+      }
+    }
+
+    /* PRODUCTS ----------------------------------------------------------- */
+    .products {
+      margin-top: 5rem;
+
+      .containerish {
+        height: 1023px;
+
+        .product-wrapper {
+          right: 35px;
+          top: 50px;
+          padding: 80px 20px 80px 20px;
+
+          p {
+            text-align: center;
+            margin-top: 7rem;
+            margin-bottom: 2rem;
+          }
+
+          .product-box {
+            margin-bottom: 3rem;
+          }
         }
       }
     }
