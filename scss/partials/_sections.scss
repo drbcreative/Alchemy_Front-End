@@ -93,6 +93,29 @@
   }
 
   /* ABOUT ------------------------------------------------------------------ */
+  .dr-bio {
+    .containerish {
+      display: grid;
+      align-items: center;
+
+      .section-img {
+        background: url('../../img/dr-img@2x.jpg') center / cover;
+        height: 75vh;
+        max-height: 712px;
+      }
+
+      .section-info {
+        background: url('../../img/dr-content-bg@2x.jpg') center / cover;
+        grid-row: 1;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+    }
+  }
+
   /* FACE ------------------------------------------------------------------- */
   /* MIND ------------------------------------------------------------------- */
   /* PRODUCTS --------------------------------------------------------------- */
