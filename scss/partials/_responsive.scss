@@ -87,6 +87,22 @@
         }
       }
     }
+
+    /* BODY ----------------------------------------------------------------- */
+    .face {
+      margin-top: 2rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+
+        .section-info {
+          padding: 40px 20px;
+          height: 100%;
+        }
+      }
+    }
   }
 
 }
@@ -124,6 +140,35 @@
 
     /* BODY ----------------------------------------------------------------- */
     .body {
+      margin-top: 2rem;
+
+      .containerish {
+        grid-template-columns: 1fr 100px 1fr;
+        align-items: flex-start;
+
+        .section-info {
+          padding: 100px 4rem 50px 20px;
+          height: auto;
+          grid-column: 1 / 3;
+          grid-row: 1;
+
+          // .ui-btn {
+          //   min-width: 186px;
+          // }
+        }
+
+        .section-img {
+          grid-row: 1;
+          grid-column: 2 / -1;
+          width: 100% !important;
+          height: auto;
+          background: blue;
+        }
+      }
+    }
+
+    /* FACE ----------------------------------------------------------------- */
+    .face {
       margin-top: 2rem;
 
       .containerish {
@@ -191,7 +236,7 @@
       }
     }
 
-    /* ABOUT ------------------------------------------------------------------ */
+    /* ABOUT ---------------------------------------------------------------- */
     .dr-bio {
       margin-top: 5rem;
 
@@ -218,6 +263,33 @@
         }
       }
     }
+
+    /* FACE ----------------------------------------------------------------- */
+    .face {
+      margin-top: 5rem;
+
+      .containerish {
+        grid-template-columns: 1fr 100px 1r;
+        align-items: flex-start;
+
+        .section-info {
+          padding: 130px 10px 130px 2rem;
+          height: auto;
+          grid-column: 1 / 3;
+          grid-row: 1;
+
+        }
+
+        .section-img {
+          grid-row: 1;
+          grid-column: 2 / -1;
+          width: 100% !important;
+          height: auto;
+          background: blue;
+          margin-top: 3rem;
+        }
+      }
+    }
   }
 }
 
@@ -228,7 +300,8 @@
   .main-content-wrapper {
 
     .body,
-    .dr-bio {
+    .dr-bio,
+    .face {
       margin-top: 6rem;
     }
   }
