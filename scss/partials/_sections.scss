@@ -134,6 +134,31 @@
   }
 
   /* MIND ------------------------------------------------------------------- */
+  .mind {
+    .containerish {
+      display: grid;
+
+      .section-info {
+        background: url('../../img/mind-content-bg@2x.jpg') center / cover;
+        padding: 40px 20px;
+        text-align: center;
+        grid-row: 1;
+      }
+
+      .col-left {
+        background: url('../../img/mind-img-1@2x.jpg') center / cover;
+        height: 50vh;
+        max-height: 747px;
+      }
+
+      .col-right {
+        background: url('../../img/mind-img-2@2x.jpg') center / cover;
+        height: 50vh;
+        max-height: 747px;
+      }
+    }
+  }
+
   /* PRODUCTS --------------------------------------------------------------- */
 }
 
