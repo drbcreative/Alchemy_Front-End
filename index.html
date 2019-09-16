@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Title</title>
+  <title>Alchemy Wellness</title>
 
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="css/vendor/db-animate.min.css" />
   <link rel="stylesheet" href="css/theme.min.css" />
 </head>
 
-<body>
-  <header>
+<body id="home">
+  <header id="mobile-header">
     <!-- topbar -->
     <div class="topbar">
       <div class="containerish">
@@ -24,18 +24,12 @@
           <a href="#" class="social-link">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="topbar-link">12345 Some St. Some City, ST 00000</a>
         </div>
-        <div class="col-mid">
-          <a href="#" class="topbar-link color-white">
-            <strong>Tagline or CTA Will Go Here</strong>
-          </a>
-        </div>
+
         <div class="col-right">
-          <a href="#" class="topbar-link">Link 1</a>
-          <a href="#" class="topbar-link">Link 2</a>
-          <a href="#" class="topbar-link">Link 3</a>
-          <a href="#" class="topbar-link">Link 4</a>
+          <a href="#" class="topbar-link d-none d-lg-block">PROMOTIONS</a>
+          <a href="#" class="topbar-link d-none d-lg-block">EVENTS</a>
+          <a href="#" class="topbar-link d-none d-lg-block">BLOG</a>
           <a href="tel:555-555-5555" class="topbar-link">(555) 555-5555</a>
         </div>
       </div>
@@ -45,9 +39,9 @@
     <!-- navbar -->
     <section class="navbar-wrapper">
       <div class="containerish">
-        <nav class="navbar navbar-expand-xl navbar-light px-0">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo@2x.png" class="nav-logo" alt="">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+          <a class="navbar-brand d-block d-lg-none" href="#">
+            <img src="img/logo-mobile.svg" class="nav-logo" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,90 +49,100 @@
           </button>
 
           <div class="collapse navbar-collapse" id="main-nav">
-            <div class="navbar-nav ml-auto px-0">
+            <div class="navbar-nav ml-auto mx-lg-auto px-0 pt-3 pt-lg-0">
               <span class="nav-item">
-                <a href="#" class="nav-link" role="button">Link 1</a>
+                <a href="#" class="nav-link" role="button">ABOUT</a>
               </span>
               <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+
               <span class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">Link
-                  2</a>
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">BODY</a>
                 <div class="dropdown-menu">
-                  <ul class="mega-menu-list">
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                    <li class="dropdown-item"><a href="#">Sublink</a></li>
-                  </ul>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
                 </div>
               </span>
               <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
-              <span class="nav-item">
-                <a href="#" class="nav-link" role="button">Link 3</a>
-              </span>
-              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+
               <span class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">Link
-                  4</a>
-                <div class="dropdown-menu mega-menu">
-                  <div class="containerish">
-                    <div class="col-left">
-                      <div class="mega-menu-header">Link 5</div>
-                      <ul class="mega-menu-list">
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                      </ul>
-                    </div>
-                    <div class="col-middle">
-                      <div class="mega-menu-header">Link 6</div>
-                      <ul class="mega-menu-list">
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                      </ul>
-                    </div>
-                    <div class="col-right">
-                      <div class="mega-menu-header">Link 7</div>
-                      <ul class="mega-menu-list">
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                        <li class="dropdown-item"><a href="#">Sublink
-                          </a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">FACE</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
                 </div>
               </span>
               <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
-              <span class="nav-item">
-                <a href="#" class="nav-link" role="button">Link 8</a>
+
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">MIND</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
               </span>
               <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
-              <span class="nav-item">
-                <a href="#" class="nav-link" role="button">Link 9/a>
+
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">PRODUCTS</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
               </span>
               <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
-              <span class="nav-item">
-                <a href="#" class="nav-link" role="button">Link 10</a>
+
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">CONCERNS</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">PATIENT
+                  INFO</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">REQUEST
+                  APPOINTMENT</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
               </span>
             </div>
           </div>
@@ -146,22 +150,60 @@
       </div>
     </section>
     <!-- /navbar -->
-
   </header>
 
   <main>
+    <!-- main content wrapper -->
+    <div class="main-content-wrapper">
 
+      <!-- page-header -->
+      <div class="page-header d-none d-lg-block">
+        <div class="containerish" id="header-container">
+          <img src="img/logo.svg" alt="" class="main-logo">
+        </div>
+      </div>
+      <!-- page-header -->
+
+      <!-- hero -->
+      <!-- /hero -->
+
+      <!-- cta -->
+      <!-- /cta -->
+
+      <!-- body -->
+      <!-- /body -->
+
+      <!-- about -->
+      <!-- /about -->
+
+      <!-- face -->
+      <!-- /face -->
+
+      <!-- mind -->
+      <!-- /mind -->
+
+      <!-- products -->
+      <!-- /products -->
+    </div>
+    <!-- /main content wrapper -->
+
+    <!-- appointments -->
+    <!-- /appointments -->
   </main>
 
   <footer>
+    <!-- footer-1 -->
+    <!-- /footer-1 -->
 
+    <!-- footer-2 -->
+    <!-- /footer-2 -->
   </footer>
 
 
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap.bundle.min.js"></script>
   <script src="js/vendor/db-animate.min.js"></script>
-  <!-- <script src="js/app.min.js"></script> -->
+  <script src="js/app.min.js"></script>
 </body>
 
 </html>

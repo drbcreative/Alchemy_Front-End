@@ -22,30 +22,9 @@
     min-width: 220px;
   }
 
-  /* TOPBAR ***************************************************************** */
   .topbar {
     .containerish {
-      max-width: 100% !important;
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: 1fr;
-      padding: 0.2rem 0.5rem;
-
-      .col-left {
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .col-right {
-        // grid-row: 1;
-        // grid-column: 2;
-        // display: flex;
-        // align-items: center;
-        // justify-content: flex-end;
-      }
+      padding: .3rem 1rem;
     }
   }
 }
@@ -63,25 +42,11 @@
 
   /* TOPBAR ***************************************************************** */
   .topbar {
+    background-color: transparent;
+    padding: .3rem 0;
+
     .containerish {
-      grid-template-columns: max-content 1fr max-content;
-      padding: 0.2rem 1rem;
-
-      .col-left {
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-
-      .col-right {
-        grid-row: 1;
-        grid-column: 3;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
+      padding: .3rem 0;
     }
   }
 }
@@ -92,31 +57,13 @@
 @media screen and (min-width: 1200px) {
 
   /* TOPBAR ******************************************************* */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+  // header {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  // }
 
-  /* TOPBAR ******************************************************* */
-  .topbar {
 
-    .containerish {
-
-      .col-mid {
-        display: flex;
-        grid: 2;
-        justify-content: center;
-      }
-
-      .topbar-link {
-        // margin-right: 1rem;
-        display: inline-flex;
-      }
-
-      padding: 0.2rem 2rem;
-    }
-  }
 
   /* NAVBAR ***************************************************************** */
   .dropdown:hover>.dropdown-menu {
