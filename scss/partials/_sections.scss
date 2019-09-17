@@ -35,7 +35,7 @@
       max-width: 1200px;
       height: 75vh;
       max-height: 560px;
-      background: url('../../img/hero-img@2x.jpg') center / cover;
+      background: url('../img/hero-img@2x.jpg') center / cover;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -54,6 +54,13 @@
       .section-info {
         z-index: 2;
         text-align: center;
+      }
+
+      .ui-btn-white-ol {
+        &:hover {
+          background: $color-white;
+          color: $color-dark;
+        }
       }
     }
   }
@@ -82,7 +89,7 @@
       display: grid;
 
       .section-info {
-        background: url('../../img/body-content-bg@2x.jpg') top / cover;
+        background: url('../img/body-content-bg@2x.jpg') top / cover;
         padding: 40px 20px;
 
         p {
@@ -99,13 +106,13 @@
       align-items: center;
 
       .section-img {
-        background: url('../../img/dr-img@2x.jpg') center / cover;
+        background: url('../img/dr-img@2x.jpg') center / cover;
         height: 75vh;
         max-height: 712px;
       }
 
       .section-info {
-        background: url('../../img/dr-content-bg@2x.jpg') center / cover;
+        background: url('../img/dr-content-bg@2x.jpg') center / cover;
         grid-row: 1;
         padding: 40px 20px;
         display: flex;
@@ -123,7 +130,7 @@
       display: grid;
 
       .section-info {
-        background: url('../../img/face-content-bg@2x.jpg') top / cover;
+        background: url('../img/face-content-bg@2x.jpg') top / cover;
         padding: 40px 20px;
 
         p {
@@ -139,20 +146,27 @@
       display: grid;
 
       .section-info {
-        background: url('../../img/mind-content-bg@2x.jpg') center / cover;
+        background: url('../img/mind-content-bg@2x.jpg') center / cover;
         padding: 40px 20px;
         text-align: center;
         grid-row: 1;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
+        &.show {
+          opacity: 1;
+          transition: all 1s ease-in-out;
+        }
       }
 
       .col-left {
-        background: url('../../img/mind-img-1@2x.jpg') center / cover;
+        background: url('../img/mind-img-1@2x.jpg') center / cover;
         height: 50vh;
         max-height: 747px;
       }
 
       .col-right {
-        background: url('../../img/mind-img-2@2x.jpg') center / cover;
+        background: url('../img/mind-img-2@2x.jpg') center / cover;
         height: 50vh;
         max-height: 747px;
       }
@@ -163,13 +177,13 @@
   .products {
     .containerish {
       max-width: 1200px;
-      background: url('../../img/products-bg@2x.jpg') center / cover;
-      min-height: 100vh;
+      background: url('../img/products-bg@2x.jpg') center / cover;
+      min-height: 90vh;
       max-height: 1032px;
       position: relative;
 
       .product-wrapper {
-        background: url('../../img/product-wrapper-bg@2x.png') top / cover;
+        background: url('../img/product-wrapper-bg@2x.png') top / cover;
         padding: 40px 20px;
         width: 100%;
         max-width: 466px;
@@ -190,6 +204,13 @@
           align-items: center;
           justify-content: center;
           margin-bottom: 1rem;
+          opacity: 0;
+          transition: all 1s ease-in-out;
+
+          &.show {
+            opacity: 1;
+            transition: all 1s ease-in-out;
+          }
 
           .product-link {
             border: 1px solid $color-white;
@@ -201,9 +222,9 @@
 
             &:hover {
               text-decoration: none;
-              border: 1px solid lighten($color-main, 30);
-              background: lighten($color-main, 20);
-              color: darken($color-main, 10);
+              border: 1px solid $color-white;
+              background: $color-white;
+              color: $color-dark;
               transition: all .2s ease-in-out;
             }
           }
@@ -214,15 +235,15 @@
         }
 
         .product-1 {
-          background: url('../../img/product-1@2x.jpg') center / cover;
+          background: url('../img/product-1@2x.jpg') center / cover;
         }
 
         .product-2 {
-          background: url('../../img/product-2@2x.jpg') center / cover;
+          background: url('../img/product-2@2x.jpg') center / cover;
         }
 
         .product-3 {
-          background: url('../../img/product-3@2x.jpg') center / cover;
+          background: url('../img/product-3@2x.jpg') center / cover;
         }
 
       }
@@ -233,7 +254,7 @@
 
 /* APPOINTMENTS ------------------------------------------------------------- */
 .appointments {
-  background: url("../../img/appointments-bg@2x.jpg") center / cover;
+  background: url("../img/appointments-bg@2x.jpg") center / cover;
   min-height: 400px;
   padding: 40px 20px;
   display: flex;
@@ -263,6 +284,11 @@
 
     input:not(:last-child) {
       margin-bottom: 0.5rem;
+    }
+
+    ::placeholder {
+      font-size: .8rem !important;
+      font-family: $font-secondary !important;
     }
 
   }

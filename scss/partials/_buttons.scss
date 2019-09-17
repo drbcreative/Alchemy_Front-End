@@ -6,7 +6,7 @@
 }
 
 .ui-btn {
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-size: 0.75rem;
   font-weight: 700;
   font-style: normal;
@@ -141,13 +141,13 @@
 
 .ui-btn-white {
   background-color: #fff;
-  border: 1px solid #fff;
-  color: $color-main;
+  border: 1px solid $color-dark;
+  color: $color-dark;
 
   &:hover {
-    color: $color-main;
-    background-color: darken(#fff, 15);
-    border: 1px solid darken(#fff, 15);
+    color: $color-white;
+    background-color: darken($color-dark, 15);
+    border: 1px solid darken($color-dark, 15);
     text-decoration: none;
   }
 }
@@ -158,8 +158,8 @@
   color: $color-white;
 
   &:hover {
-    color: $color-main;
-    background-color: darken(#fff, 15);
+    color: $color-white;
+    background-color: darken($color-dark, 15);
     border: 1px solid darken(#fff, 15);
     text-decoration: none;
   }

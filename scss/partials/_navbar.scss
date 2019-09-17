@@ -63,13 +63,25 @@
   position: relative;
 
   &::after {
-    content: "|";
-    color: $color-dark;
+    content: url('../img/triangle-up.svg');
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.2;
+    transform: translate(-50%, -60%);
+    opacity: 1;
+  }
+}
+
+.nav-item.nav-divider:nth-child(4n) {
+  position: relative;
+
+  &::after {
+    content: url('../img/triangle-down.svg') !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    opacity: 1;
   }
 }
 
@@ -92,12 +104,12 @@
     font-family: $font-secondary;
     font-size: 0.8125rem;
     position: relative;
-    color: $color-light;
+    color: $color-white;
     font-weight: 400;
 
     &:hover {
       background-color: transparent;
-      color: $color-dark-accent;
+      color: $color-light-accent;
     }
 
     &:focus {
@@ -129,39 +141,6 @@
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 6rem;
       padding: 1rem 3rem;
-
-      // .mega-menu-header {
-      //   font-family: $font-primary;
-      //   font-size: 24px;
-      //   font-weight: 700;
-      //   color: $color-white;
-      // }
-
-      // .mega-menu-list {
-      //   padding: 0;
-
-      //   .dropdown-item {
-      //     padding-left: 0;
-      //     font-family: $font-primary;
-      //     font-size: 1rem;
-      //     position: relative;
-
-      //     &::before {
-      //       content: '•';
-      //       margin-right: .3rem;
-      //     }
-
-      //     a {
-      //       color: $color-white;
-
-      //       &:hover {
-      //         color: $color-dark-accent;
-      //         text-decoration: none;
-      //       }
-      //     }
-
-      //   }
-      // }
 
       .col-left {
         // background: red;
